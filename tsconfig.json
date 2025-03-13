@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "outDir": "dist", // Compiled Javascript output
+    "rootDir": "src",
+    "module": "CommonJS",
+    "target": "ES6", // output modern JS
+    "declaration": true, // generates type ceclaration files (.d.ts)
+    "strict": true
+  },
+  "include": ["src"]
+}

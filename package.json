@@ -1,0 +1,44 @@
+{
+  "name": "mantis-sdk",
+  "version": "1.0.0",
+  "description": "Mantis SDK for tracking microservice metrics.",
+  "keywords": [
+    "metrics",
+    "monitoring",
+    "sdk",
+    "microservices"
+  ],
+  "homepage": "https://github.com/oslabs-beta/mantis_project#readme",
+  "bugs": {
+    "url": "https://github.com/oslabs-beta/mantis_project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oslabs-beta/mantis_project.git"
+  },
+  "license": "MIT",
+  "author": "Mantis project",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs",
+    "types": "./dist/index.d.ts"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.5",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
